@@ -1,0 +1,9 @@
+{
+	"name": "salesendtoendproj-df",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1562a8ac-989e-4426-bcd3-d8c420b3b418",
+		"tenantId": "a4820b9a-865d-4691-87cc-c80444a06b4c"
+	}
+}
