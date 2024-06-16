@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "salesendtoendproj-df"
+		},
+		"ls_adls_ls_accountKey": {
+			"value": ""
+		},
+		"ls_AmazonS3_properties_typeProperties_accessKeyId": {
+			"value": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "S3AccessKeyID"
+			}
+		},
+		"ls_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://salesproject-kvs.vault.azure.net/"
+		},
+		"ls_adls_ls_properties_typeProperties_url": {
+			"value": "https://salesendtoendprojdlsa.dfs.core.windows.net/"
+		},
+		"ls_sql_db_properties_typeProperties_server": {
+			"value": "salesendtoend-db-server.database.windows.net"
+		},
+		"ls_sql_db_properties_typeProperties_database": {
+			"value": "salesendtoend_db"
+		},
+		"ls_sql_db_properties_typeProperties_userName": {
+			"value": "salesdb"
+		},
+		"tr_sales_project_properties_pl_sales_project_parameters_fileName": {
+			"value": "@triggerBody().fileName"
+		},
+		"tr_sales_project_properties_typeProperties_scope": {
+			"value": "/subscriptions/c9939a34-52b0-4a0a-9cb5-6a03f1daff58/resourceGroups/sales-endtoend-proj-rg/providers/Microsoft.Storage/storageAccounts/salesendtoendprojdlsa"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
